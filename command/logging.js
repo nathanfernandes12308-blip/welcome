@@ -1,10 +1,10 @@
 const { EmbedBuilder } = require('discord.js');
 
-const WELCOME_CHANNEL_ID = '1516868805677289543';
-const LOGS_CHANNEL_ID = '1516868810425106603';
+const WELCOME_CHANNEL_ID = '1522660501304377495';
+const LOGS_CHANNEL_ID = '1522660503825154149';
 
 // Hosted GIF URL — replace this with your actual hosted GIF link after uploading to imgur/cdn
-const WELCOME_GIF = 'https://tenor.com/view/aizen-aizen-sosuke-sosuke-bleach-thousand-year-blood-war-gif-3636425655522331206';
+const WELCOME_GIF = 'https://tenor.com/lIInTBxrbk7.gif';
 
 function registerEvents(client) {
   // ==================== WELCOME ====================
