@@ -8,7 +8,7 @@ const { registerEvents } = require('./events');
 const { registerAntiNuke } = require('./handlers/antiNuke');
 const { registerAntiRaid } = require('./handlers/antiRaid');
 const { registerAutomod } = require('./handlers/automod');
-const { handleTicketSelect } = require('./commands/ticketpanel');
+const { handleTicketSelect, handleTicketClose } = require('./commands/ticketpanel');
 const { getGiveaways, saveGiveaway } = require('./store');
 
 // ==================== BOT NAME ====================
@@ -94,6 +94,12 @@ client.on('interactionCreate', async (interaction) => {
     // Ticket division select menu
     if (interaction.isStringSelectMenu() && interaction.customId === 'ticket_division_select') {
       await handleTicketSelect(interaction);
+      return;
+    }
+
+    // Ticket close button
+    if (interaction.isButton() && interaction.customId.startsWith('ticket_close_')) {
+      await handleTicketClose(interaction);
       return;
     }
 
