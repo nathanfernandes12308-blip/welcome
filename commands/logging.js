@@ -54,8 +54,8 @@ function registerEvents(client) {
       if (!channel) return;
 
       const embed = new EmbedBuilder()
-        .setTitle('🌑 A soul has fled HOGYOKU VANGUARD ')
-        .setDescription(`**${member.user.tag}** has abandoned the dominion.\n*The weak were never meant to stay.*`)
+        .setTitle('🌑 has departed from Inferno Sovereign. ')
+        .setDescription(`**${member.user.tag}** heir journey ends here, but the flames of the Sovereign continue to burn. We wish them the best on whatever path lies ahead.\n*The weak were never meant to stay.*`)
         .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
         .setColor(0x6A0DAD)
         .setTimestamp();
